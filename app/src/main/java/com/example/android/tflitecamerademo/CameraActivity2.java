@@ -296,14 +296,11 @@ public class CameraActivity2 extends Activity {
                     public void run() {
                         try {
                             /* 取得相片 */
-
                             Bitmap bitmap = BitmapFactory.decodeByteArray(_data, 0,
                                     _data.length);
 //                    imgv.setImageBitmap(bitmap);
                             Log.i(TAG, Thread.currentThread()+": startImageClassifier ");
                             classifyFrame(bitmap);
-
-                            handler.postDelayed(r, 50);
 //                        /* 创建文件 */
 //                        File myCaptureFile = new File(strCaptureFilePath, "1.jpg");
 //                        BufferedOutputStream bos = new BufferedOutputStream(
@@ -497,7 +494,7 @@ public class CameraActivity2 extends Activity {
 
             }
 
-            handler.postDelayed(r, 1000);
+            handler.postDelayed(r, 50);
         } catch (IOException e) {
             e.printStackTrace();
         }

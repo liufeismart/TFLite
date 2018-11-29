@@ -1,21 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/liufei/Documents/tensorFlow/TensorFlowRetrain1/tensorflow-for-poets-2/android/tflite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
-            "map": [
-                {
-                    "source": "/Users/liufei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/22dbb010a5e371f3ffb24424bc5147d8/res/values-port/values-port.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "55",
-                        "endOffsets": "106"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/liufei/Documents/workspace/tflite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {

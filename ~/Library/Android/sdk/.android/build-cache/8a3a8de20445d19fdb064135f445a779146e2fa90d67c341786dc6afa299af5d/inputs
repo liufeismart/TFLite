@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/liufei/Documents/workspace/tflite/app/build/intermediates/transforms/desugar/debug/12.jar
+FILE.hash=4488356e11a331f7555f76dba383049c6b413aecbd554926f826e0178078e2d9
+DX_VERSION=1.14
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=DX
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=19
+IS_DEBUGGABLE=true

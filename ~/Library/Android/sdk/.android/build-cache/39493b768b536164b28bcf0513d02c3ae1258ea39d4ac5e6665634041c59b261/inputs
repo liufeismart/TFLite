@@ -1,0 +1,10 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE.path=/Users/liufei/Documents/tensorFlow/TensorFlowRetrain1/tensorflow-for-poets-2/android/tflite/app/build/intermediates/transforms/desugar/debug/10.jar
+FILE.hash=003f01ae6bac91495c066ca43ec93dd399f988463a72a5830270fa946922fc8c
+DX_VERSION=1.14
+JUMBO_MODE=true
+OPTIMIZE=true
+DEXER_TOOL=DX
+CACHE_KEY_VERSION=4
+MIN_SDK_VERSION=21
+IS_DEBUGGABLE=true

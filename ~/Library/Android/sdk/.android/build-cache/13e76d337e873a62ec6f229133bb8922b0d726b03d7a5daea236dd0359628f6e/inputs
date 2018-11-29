@@ -1,0 +1,4 @@
+COMMAND=FIX_STACK_FRAMES
+file.path=/Users/liufei/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.10.0.aar/aac5946010c78ace47fcb060f0505f72/jars/classes.jar
+file.size=12711
+file.timestamp=1543227832000

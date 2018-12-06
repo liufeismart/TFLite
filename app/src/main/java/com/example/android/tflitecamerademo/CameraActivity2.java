@@ -132,7 +132,6 @@ public class CameraActivity2 extends Activity {
                 "！原来是木兹，她在雪地里睡着了。咚咚......可怕的大暴龙来了");
         map.put("page6", "伙伴们喊着：啊，大暴龙，快跑，快跑......可是木兹睡着了。大暴龙扑过来了，伙伴们急忙抬起熟睡的木兹逃走......虽然" +
                 "木兹很爱睡觉，但小伙伴们都很喜欢她，因为她很有爱心。");
-        // 避免耗时任务占用 CPU 时间片造成UI绘制卡顿，提升启动页面加载速度
         Log.v(TAG, "onCreate1");
         try {
             classifier = new ImageClassifier(this);
@@ -196,7 +195,6 @@ public class CameraActivity2 extends Activity {
         }
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 0);
         camera = Camera.open(cameraIndex);
-
 //        camera = Camera.open();
         //2.设置参数
         Camera.Parameters params = camera.getParameters();
@@ -282,15 +280,7 @@ public class CameraActivity2 extends Activity {
         Log.v(TAG, "takePicture");
         camera.takePicture(null, null, new Camera.PictureCallback() {
             public void onPictureTaken(byte[] _data, Camera _camera) {
-                Log.v(TAG, "onPictureTaken2");
-                /*
-                 * if (Environment.getExternalStorageState().equals(
-                 * Environment.MEDIA_MOUNTED)) // 判断SD卡是否存在，并且可以可以读写 {
-                 *
-                 * } else { Toast.makeText(EX07_16.this, "SD卡不存在或写保护",
-                 * Toast.LENGTH_LONG) .show(); }
-                 */
-                // Log.w("============", _data[55] + "");
+                Log.v(TAG, "onPictureTaken");
                 backgroundHandler.post(new Runnable() {
                     @Override
                     public void run() {
@@ -301,25 +291,6 @@ public class CameraActivity2 extends Activity {
 //                    imgv.setImageBitmap(bitmap);
                             Log.i(TAG, Thread.currentThread()+": startImageClassifier ");
                             classifyFrame(bitmap);
-//                        /* 创建文件 */
-//                        File myCaptureFile = new File(strCaptureFilePath, "1.jpg");
-//                        BufferedOutputStream bos = new BufferedOutputStream(
-//                                new FileOutputStream(myCaptureFile));
-//                        /* 采用压缩转档方法 */
-//                        bm.compress(Bitmap.CompressFormat.JPEG, 100, bos);
-//
-//                        /* 调用flush()方法，更新BufferStream */
-//                        bos.flush();
-//
-//                        /* 结束OutputStream */
-//                        bos.close();
-//
-//                        /* 让相片显示3秒后圳重设相机 */
-//                        // Thread.sleep(2000);
-//                        /* 重新设定Camera */
-//                        stopCamera();
-//                        initCamera();
-
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -494,7 +465,7 @@ public class CameraActivity2 extends Activity {
 
             }
 
-            handler.postDelayed(r, 50);
+            handler.post(r);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -541,7 +512,6 @@ public class CameraActivity2 extends Activity {
         backgroundThread = new HandlerThread(HANDLE_THREAD_NAME);
         backgroundThread.start();
         backgroundHandler = new Handler(backgroundThread.getLooper());
-
     }
 //
 //    /** Takes photos and classify them periodically. */

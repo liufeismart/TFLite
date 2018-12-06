@@ -18,7 +18,7 @@ MERGED from [com.android.support:support-media-compat:25.2.0] /Users/liufei/.gra
 MERGED from [com.android.support:support-core-utils:25.2.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/3b25870293c2e6795cd547f9efa856c3/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-core-ui:25.2.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/521a136bbc16b03a89812f0e09710551/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-compat:25.2.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/723c6de9b3475b532f4ab118352f72e8/AndroidManifest.xml:17:1-27:12
-MERGED from [org.tensorflow:tensorflow-lite:1.10.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.10.0.aar/aac5946010c78ace47fcb060f0505f72/AndroidManifest.xml:2:1-6:12
+MERGED from [org.tensorflow:tensorflow-lite:1.12.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.12.0.aar/907081891e33a045fcaae68540252768/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:18:1-50:12
 INJECTED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:18:1-50:12
 INJECTED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:18:1-50:12
@@ -80,6 +80,8 @@ MERGED from [com.android.support:support-core-ui:25.2.0] /Users/liufei/.gradle/c
 MERGED from [com.android.support:support-core-ui:25.2.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/521a136bbc16b03a89812f0e09710551/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.2.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/723c6de9b3475b532f4ab118352f72e8/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.2.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/723c6de9b3475b532f4ab118352f72e8/AndroidManifest.xml:21:5-23:58
+MERGED from [org.tensorflow:tensorflow-lite:1.12.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.12.0.aar/907081891e33a045fcaae68540252768/AndroidManifest.xml:5:5-7:41
+MERGED from [org.tensorflow:tensorflow-lite:1.12.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.12.0.aar/907081891e33a045fcaae68540252768/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:26:5-44
 INJECTED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:26:5-44
 	tools:overrideLibrary
@@ -120,8 +122,8 @@ MERGED from [com.android.support:support-core-ui:25.2.0] /Users/liufei/.gradle/c
 MERGED from [com.android.support:support-core-ui:25.2.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/521a136bbc16b03a89812f0e09710551/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.2.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/723c6de9b3475b532f4ab118352f72e8/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.2.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/723c6de9b3475b532f4ab118352f72e8/AndroidManifest.xml:25:5-20
-MERGED from [org.tensorflow:tensorflow-lite:1.10.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.10.0.aar/aac5946010c78ace47fcb060f0505f72/AndroidManifest.xml:4:5-5:19
-MERGED from [org.tensorflow:tensorflow-lite:1.10.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.10.0.aar/aac5946010c78ace47fcb060f0505f72/AndroidManifest.xml:4:5-5:19
+MERGED from [org.tensorflow:tensorflow-lite:1.12.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.12.0.aar/907081891e33a045fcaae68540252768/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:1.12.0] /Users/liufei/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.12.0.aar/907081891e33a045fcaae68540252768/AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:29:9-41
 	android:hardwareAccelerated
@@ -148,9 +150,3 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:45:17-77
 	android:name
 		ADDED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:45:27-74
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:18:1-50:12 reason: org.tensorflow.lite has a targetSdkVersion < 4
-uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:18:1-50:12 reason: org.tensorflow.lite has a targetSdkVersion < 4
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/liufei/Documents/workspace/tflite/app/src/main/AndroidManifest.xml:18:1-50:12 reason: org.tensorflow.lite requested WRITE_EXTERNAL_STORAGE
